@@ -15,8 +15,13 @@ public class Fluxo {
             System.out.println(Math.pow(i, 2));
             //divisão por zero deveria ser o numero seguido de infinitos zeros ex:
             //2/0 =2infinitoszeros
-            double a = i/0.001;
+            double a = i/0.002;
             System.out.println(a);
+            try{
+                int b = i/0;
+            }catch(ArithmeticException ex){
+                System.out.println("não existe divisão por 0");
+            }
         }
         System.out.println("fim metodo2");
     }
