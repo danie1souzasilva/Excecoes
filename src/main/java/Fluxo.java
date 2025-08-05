@@ -13,6 +13,10 @@ public class Fluxo {
         System.out.println("ini metodo2");
         for( int i = 1; i <= 5; i++){
             System.out.println(Math.pow(i, 2));
+            //divisão por zero deveria ser o numero seguido de infinitos zeros ex:
+            //2/0 =2infinitoszeros
+            double a = i/0.001;
+            System.out.println(a);
         }
         System.out.println("fim metodo2");
     }
